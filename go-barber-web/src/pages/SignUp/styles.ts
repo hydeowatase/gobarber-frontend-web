@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import signInBackground from "../../assets/sign-in-background.png";
+
+import signUpBackground from "../../assets/sign-up-background.png";
 
 import { shade } from "polished";
 
@@ -41,7 +42,7 @@ export const Content = styled.div`
   }
 
   > a {
-    color: #ff9000;
+    color: #f4ede8;
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -62,6 +63,6 @@ export const Content = styled.div`
 
 export const Backgound = styled.div`
   flex: 1;
-  background: url(${signInBackground}) no-repeat center;
+  background: url(${signUpBackground}) no-repeat center;
   background-size: cover;
 `;
