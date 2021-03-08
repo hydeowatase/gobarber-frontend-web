@@ -49,12 +49,16 @@ const SignIn: React.FC = () => {
           password: data.password,
         });
       } catch (err) {
-
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErros(err);
           formRef.current?.setErrors(errors);
         }
-        addToast();
+        addToast({
+          type: "success",
+          title: "Falha na autenticação.",
+          description:
+            "Ocorreu um erro ao fazer login, verifique seu usuário e senha.",
+        });
       }
     },
     [signIn, addToast]
