@@ -5,6 +5,8 @@ import GlobalStyle from "./styles/global";
 
 import AppProviders from "./hooks/index";
 
+import AuthContex  from "./context/AuthContext";
+
 import Routes from "./routes/index";
 
 const App: React.FC = () => (
